@@ -16,5 +16,5 @@ bundleName(input, function (err, name) {
 		throw err;
 	}
 
-	process.stdout.write(name);
+	console.log(name);
 });
