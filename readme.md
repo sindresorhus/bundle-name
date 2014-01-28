@@ -15,8 +15,10 @@ npm install --save bundle-name
 ```js
 var bundleName = require('bundle-name');
 
-bundleName('com.apple.Safari');
-//=> Safari
+bundleName('com.apple.Safari', function (err, name) {
+	console.log(name);
+	//=> Safari
+});
 ```
 
 
