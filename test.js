@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var bundleName = require('./index');
+var bundleName = require('./');
 
 it('should get bundle name from bundle id', function (cb) {
 	bundleName('com.apple.Safari', function (err, name) {

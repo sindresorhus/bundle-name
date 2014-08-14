@@ -2,17 +2,15 @@
 
 > Get [bundle name](https://developer.apple.com/library/Mac/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/plist/info/CFBundleName) from a [bundle identifier](https://developer.apple.com/library/Mac/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html#//apple_ref/doc/plist/info/CFBundleIdentifier) (OS X): `com.apple.Safari` => `Safari`
 
-See [bundle-id](https://github.com/sindresorhus/bundle-id) for the reverse.
-
 
 ## Install
 
-```
-npm install --save bundle-name
+```sh
+$ npm install --save bundle-name
 ```
 
 
-## Example
+## Usage
 
 ```js
 var bundleName = require('bundle-name');
@@ -26,19 +24,25 @@ bundleName('com.apple.Safari', function (err, name) {
 
 ## CLI
 
-You can also use it as a CLI app by installing it globally:
-
-```
-npm install --global bundle-name
+```sh
+$ npm install --global bundle-name
 ```
 
-### Usage
+```sh
+$ bundle-name --help
 
-```
-bundle-name com.apple.Safari
+  Usage
+    bundle-name <bundle-id>
+
+  Example
+    bundle-name com.apple.Safari
+    Safari
 ```
 
-Which will output `Safari`.
+
+## Related
+
+See [bundle-id](https://github.com/sindresorhus/bundle-id) for the inverse.
 
 
 ## License

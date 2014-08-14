@@ -1,14 +1,32 @@
 #!/usr/bin/env node
 'use strict';
-var bundleName = require('./index');
-var input = process.argv[2];
+var pkg = require('./package.json');
+var bundleName = require('./');
+var argv = process.argv.slice(2);
+var input = argv[0];
 
-if (!input || process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help') !== -1) {
-	return console.log('Usage\n  bundle-name <bundle id>\n\nExample\n  bundle-name com.apple.Safari\n  #=> Safari\n\nReturns the bundle name from a bundle identifier');
+function help() {
+	console.log([
+		'',
+		'  ' + pkg.description,
+		'',
+		'  Usage',
+		'    bundle-name <bundle-id>',
+		'',
+		'  Example',
+		'    bundle-name com.apple.Safari',
+		'    Safari'
+	].join('\n'));
 }
 
-if (process.argv.indexOf('-v') !== -1 || process.argv.indexOf('--version') !== -1) {
-	return console.log(require('./package').version);
+if (argv.indexOf('--help') !== -1) {
+	help();
+	return;
+}
+
+if (argv.indexOf('--version') !== -1) {
+	console.log(pkg.version);
+	return;
 }
 
 bundleName(input, function (err, name) {
