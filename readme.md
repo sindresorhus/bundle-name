@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save bundle-name
 ```
 
@@ -24,11 +24,11 @@ bundleName('com.apple.Safari', function (err, name) {
 
 ## CLI
 
-```sh
+```
 $ npm install --global bundle-name
 ```
 
-```sh
+```
 $ bundle-name --help
 
   Usage
