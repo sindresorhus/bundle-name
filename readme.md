@@ -32,10 +32,10 @@ $ npm install --global bundle-name
 $ bundle-name --help
 
   Usage
-    bundle-name <bundle-id>
+    $ bundle-name <bundle-id>
 
   Example
-    bundle-name com.apple.Safari
+    $ bundle-name com.apple.Safari
     Safari
 ```
 
