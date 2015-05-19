@@ -3,15 +3,13 @@
   "version": "1.0.1",
   "description": "Get bundle name from a bundle identifier (OS X): com.apple.Safari => Safari",
   "license": "MIT",
-  "bin": {
-    "bundle-name": "cli.js"
-  },
   "repository": "sindresorhus/bundle-name",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
+  "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -23,8 +21,9 @@
     "cli.js"
   ],
   "keywords": [
+    "cli-app",
+    "cli",
     "osx",
-    "mac",
     "plist",
     "applescript",
     "bundle",
@@ -34,9 +33,7 @@
     "identifier",
     "CFBundleName",
     "CFBundleIdentifier",
-    "uti",
-    "cli",
-    "bin"
+    "uti"
   ],
   "dependencies": {
     "meow": "^3.1.0",
