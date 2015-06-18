@@ -11,7 +11,7 @@ var cli = meow({
 		'Example',
 		'  $ bundle-name com.apple.Safari',
 		'  Safari'
-	].join('\n')
+	]
 });
 
 if (!cli.input[0]) {

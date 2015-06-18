@@ -36,7 +36,7 @@
     "uti"
   ],
   "dependencies": {
-    "meow": "^3.1.0",
+    "meow": "^3.3.0",
     "run-applescript": "^1.0.0"
   },
   "devDependencies": {
