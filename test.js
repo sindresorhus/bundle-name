@@ -1,11 +1,11 @@
-'use strict';
-var assert = require('assert');
-var bundleName = require('./');
+import test from 'ava';
+import bundleName from './';
 
-it('should get bundle name from bundle id', function (cb) {
-	bundleName('com.apple.Safari', function (err, name) {
+test(t => {
+	t.plan(1);
+
+	bundleName('com.apple.Safari', (err, name) => {
 		console.log('Bundle name:', name);
-		assert.equal(name, 'Safari');
-		cb();
+		t.is(name, 'Safari');
 	});
 });
