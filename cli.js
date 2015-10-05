@@ -17,11 +17,6 @@ if (!cli.input[0]) {
 	process.exit(1);
 }
 
-bundleName(cli.input[0], function (err, name) {
-	if (err) {
-		console.error(err.message);
-		process.exit(1);
-	}
-
+bundleName(cli.input[0]).then(name => {
 	console.log(name);
 });

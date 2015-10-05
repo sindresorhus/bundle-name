@@ -1,11 +1,9 @@
 import test from 'ava';
-import bundleName from './';
+import fn from './';
 
-test(t => {
-	t.plan(1);
+test(async t => {
+	const name = await fn('com.apple.Safari');
 
-	bundleName('com.apple.Safari', (err, name) => {
-		console.log('Bundle name:', name);
-		t.is(name, 'Safari');
-	});
+	console.log('Bundle name:', name);
+	t.is(name, 'Safari');
 });
