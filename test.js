@@ -1,11 +1,9 @@
-'use strict';
-var assert = require('assert');
-var bundleName = require('./');
+import test from 'ava';
+import fn from './';
 
-it('should get bundle name from bundle id', function (cb) {
-	bundleName('com.apple.Safari', function (err, name) {
-		console.log('Bundle name:', name);
-		assert.equal(name, 'Safari');
-		cb();
-	});
+test(async t => {
+	const name = await fn('com.apple.Safari');
+
+	console.log('Bundle name:', name);
+	t.is(name, 'Safari');
 });
