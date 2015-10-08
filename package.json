@@ -1,6 +1,6 @@
 {
   "name": "bundle-name",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Get bundle name from a bundle identifier (OS X): com.apple.Safari → Safari",
   "license": "MIT",
   "repository": "sindresorhus/bundle-name",
