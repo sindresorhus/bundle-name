@@ -22,27 +22,10 @@ bundleName('com.apple.Safari').then(name => {
 ```
 
 
-## CLI
-
-```
-$ npm install --global bundle-name
-```
-
-```
-$ bundle-name --help
-
-  Usage
-    $ bundle-name <bundle-id>
-
-  Example
-    $ bundle-name com.apple.Safari
-    Safari
-```
-
-
 ## Related
 
-See [bundle-id](https://github.com/sindresorhus/bundle-id) for the inverse.
+- [bundle-name-cli](https://github.com/sindresorhus/bundle-name-cli) - CLI for this module
+- [bundle-id](https://github.com/sindresorhus/bundle-id) - Get bundle identifier from a bundle name
 
 
 ## License
