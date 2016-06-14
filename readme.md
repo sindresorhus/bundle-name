@@ -30,4 +30,4 @@ bundleName('com.apple.Safari').then(name => {
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
