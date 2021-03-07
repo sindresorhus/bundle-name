@@ -1,6 +1,6 @@
 import test from 'ava';
-import m from '.';
+import bundleName from './index.js';
 
-test(async t => {
-	t.is(await m('com.apple.Safari'), 'Safari');
+test('main', async t => {
+	t.is(await bundleName('com.apple.Safari'), 'Safari');
 });
