@@ -13,7 +13,7 @@
 	"type": "module",
 	"exports": "./index.js",
 	"engines": {
-		"node": ">=12"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -35,10 +35,10 @@
 		"uti"
 	],
 	"dependencies": {
-		"run-applescript": "^5.0.0"
+		"run-applescript": "^6.1.0"
 	},
 	"devDependencies": {
-		"ava": "^3.15.0",
-		"xo": "^0.38.2"
+		"ava": "^5.3.1",
+		"xo": "^0.56.0"
 	}
 }
